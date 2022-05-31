@@ -1,0 +1,56 @@
+#projects {
+    padding-bottom: 150px;
+}
+.my-swiper-button-next {
+    width: 40px;
+    height: 40px;
+}
+.my-swiper-button-prev {
+    width: 40px;
+    height: 40px;
+}
+.slide-container {
+    width: 100%;
+    padding: 40px 20px;
+}
+.projects-header {
+    margin-bottom: 60px;
+}
+.slide-content {
+    margin-right: 20px;
+}
+
+.swiper-slide {
+    min-height: 400px;
+    overflow: hidden;
+    background-image: url('assets/img/nubelson-fernandes-sdg7M9KwoLM-unsplash.jpg');
+    background-size: cover;
+}
+.my-swiper-card-body {
+    height: 40%;
+    width: 100%;
+    bottom: 0;
+    background-color: blueviolet;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: 200ms;
+}
+.card:hover .my-swiper-card-body {
+   transform: translateY(0);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet {
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+    .my-swiper-button {
+        display: none;
+        /* transform: scale(0);
+        position: absolute; */
+    }
+}

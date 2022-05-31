@@ -1,0 +1,76 @@
+.awards {
+    min-height: 800px;
+    background-image: url('assets/img/pattern\ polkadot.png');
+    background-repeat: no-repeat;
+    background-position: 90% 90%;
+    background-size: 200px;
+}
+.awards-logos {
+    width: 480px;
+    height: 480px;
+    position: relative;
+}
+.awards-logos .card {
+    right: 0;
+    width: 45%;
+    position: absolute;
+}
+.awards-logos .card:nth-child(2) {
+    left: 0;
+    top: 30%;
+}
+.awards-logos .card:nth-child(3) {
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 991px) {
+    /* .awards {
+        height: 100vh;
+    } */
+    .awards-logos {
+        width: 500px;
+        height: 480px;
+        position: relative;
+        margin: auto;
+    }
+    .awards-logos .card {
+        width: 48%;
+    }
+    .awards-logos .card:nth-child(2) {
+        right: 0;
+        top: 30%;
+    }
+    .awards .card .card-body h5 {
+        font-size: 12px;
+    }
+    .awards .card .card-body p {
+        font-size: 8px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .awards {
+        text-align: center;
+    }
+    .awards-logos {
+        width: 400px;
+        height: 380px;
+        position: relative;
+        margin: auto;
+    }
+    .awards-contents {
+        padding: 50px;
+    }
+    .center-responsive {
+        display: flex;
+        justify-content: center;
+    }
+    .awards .card .card-body h5 {
+        font-size: 18px;
+    }
+    .awards .card .card-body p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,33 @@
+.services {
+    background-image: url('assets/img/pattern\ polkadot.png');
+    background-repeat: no-repeat;
+    background-position: 10% 100%;
+    background-size: 200px;
+}
+.services a {
+    transition: 200ms;
+}
+.services a:hover {
+    background-color: aliceblue;
+    transform: scale(1.05);
+    color: black;
+}
+.services .col-md-3 {
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+}
+.services .card {
+    max-width: 300px;
+}
+
+@media screen and (max-width: 500px) {
+    .services .serv-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services .serv-card .card-responsive {
+        width: 400px;
+    }
+}

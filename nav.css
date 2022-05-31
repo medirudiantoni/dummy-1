@@ -1,0 +1,197 @@
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    transition: 200ms;
+}
+nav .logo {
+    font-size: 34px;
+    font-weight: 800;
+    margin: 0 10%;
+    color: #2155CD;
+}
+nav .navmenu {
+    margin: 0 10%;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li a {
+    padding: 5px 25px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2155CD;
+}
+nav ul li a:hover {
+    background-color: rgb(255, 176, 72);
+}
+
+.sticky {
+    height: 70px;
+    background-color: #2a0f88;
+    color: white;
+}
+.sticky .logo {
+    font-size: 24px;
+    color: white;
+}
+.sticky ul li a {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+.toggle {
+    /* margin: 100px auto; */
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.togcil {
+    width: 100%;
+    height: 10%;
+    background-color: #2155CD;
+    position: absolute;
+}
+
+.togcil-1 {
+    top: 0;
+    transition: 200ms;
+}
+.togcil-2 {
+    top: 45%;
+}
+.togcil-3 {
+    bottom: 0;
+    transition: 200ms;
+}
+
+.togcil-1-1 {
+    top: 45%;
+}
+.togcil-1-2 {
+    transform: rotate(45deg);
+}
+.togcil-2-1 {
+    opacity: 0;
+}
+.togcil-3-1 {
+    bottom: 45%;
+}
+.togcil-3-2 {
+    transform: rotate(-45deg);
+}
+
+
+
+/* responsive */
+
+@media screen and (max-width: 1000px) {
+    body {
+        overflow-x: hidden;
+    }
+    nav .logo {
+        font-size: 26px;
+        font-weight: 800;
+        margin: auto;
+    }
+    nav .navmenu {
+        margin: 0;
+        position: absolute;
+        z-index: 100;
+        right: 0;
+        top: 0;
+        width: 300px;
+        height: 100vh;
+        background-color: #79DAE8;
+        display: flex;
+        justify-content: center;
+        padding: 5% 0;
+        transform: translateX(100%);
+        transition: 300ms ease-out;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        /* border: 1px solid brown; */
+        width: 90%;
+    }
+    nav ul li {
+        margin: 20px 0;
+    }
+    nav ul li a {
+        padding: 5px 30px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    nav ul li a:hover {
+        background-color: rgb(255, 176, 72);
+    }   
+
+    .toggle {
+        opacity: 1;
+        z-index: 101;
+        right: 40px;
+    }
+
+    nav .nav-slide {
+        transform: translateY(0);
+    }
+    .sticky {
+        height: 60px;
+    }
+    .sticky ul li a {
+        font-size: 25px;
+        color: #2155CD;
+    }
+    .sticky .togcil {
+        background-color: white;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    nav .navmenu {
+        width: 100%;
+        padding: 25% 0;
+    }
+    nav ul li {
+        margin: 10px 0;
+        text-align: right;
+    }
+    nav ul li a {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .sticky {
+        height: 60px;
+    }
+    .sticky ul li a {
+        font-size: 30px;
+        color: #2155CD;
+    }
+    .sticky .togcil {
+        background-color: white;
+    }
+}

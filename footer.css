@@ -1,0 +1,21 @@
+footer {
+    min-height: 400px;
+    background-color: #2155CD;
+}
+footer .logo {
+    margin: 0;
+}
+footer h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+footer p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        text-align: center;
+    }
+}

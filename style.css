@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+}
+a:hover {
+    color: white;
+    background-color: #2155CD;
+}
+h2 {
+    font-family: 'Poppins', 'sans serif';
+    font-size: 40px;
+    font-weight: bold;
+}
+.logo {
+    font-size: 34px;
+    font-weight: 800;
+    margin: 0 10%;
+    color: #fff;
+}
+.bg-c1 {
+    background-color: #E8F9FD;
+}
+.bg-c1-5 {
+    background-color: #b5f1ff;
+}
+.bg-c2 {
+    background-color: #79DAE8;
+}
+.bg-c3 {
+    background-color: #2155CD;
+}
+.bg-c4 {
+    background-color: #2a0f88;
+}
